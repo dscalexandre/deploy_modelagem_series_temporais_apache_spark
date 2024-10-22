@@ -1,0 +1,11 @@
+# Comandos do Cluster Spark
+
+docker exec spark-master spark-submit --deploy-mode client ./jobs/projeto01-treino.py
+docker exec spark-master spark-submit --deploy-mode client ./jobs/projeto01-deploy.py
+
+# Comando com Python (sem Spark)
+# Executar no diretório que contém o arquivo 'projeto01.dataviz'
+# O script do 'projeto01.dataviz' deve estar com o endereço do diretório 'previsoesdeploy' gerado durante o deploy no cluster spark
+
+python projeto01-dataviz.py
+
